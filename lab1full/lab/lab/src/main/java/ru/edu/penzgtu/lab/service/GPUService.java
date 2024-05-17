@@ -34,5 +34,5 @@ public class GPUService {
         manufacturerRepository.save(oldGPU);
     }
 
-    public void deleteGPU(GPU manufacturer) {manufacturerRepository.delete(manufacturer);}
+    public void deleteGPUById(Long id) {manufacturerRepository.deleteById(id);}
 }
