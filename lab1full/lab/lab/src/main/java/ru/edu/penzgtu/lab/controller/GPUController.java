@@ -37,7 +37,7 @@ public class GPUController {
 
     @DeleteMapping("/gpu/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteGPU(@PathVariable GPU manufacturer) {
-        gpuService.deleteGPU(manufacturer);
+    public void deleteGPU(@PathVariable Long id) {
+        gpuService.deleteGPUById(id);
     }
 }
